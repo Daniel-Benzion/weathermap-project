@@ -1,0 +1,26 @@
+#navbar {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #161616), color-stop(30%, #1d1d1d), color-stop(60%, #2d2a2a), color-stop(100%, #303030));}
+
+#citySearch {
+    color: white;
+    background: #333333;
+    border-color: #333333;
+}
+
+#search {
+    color: #ffffff;
+}
+
+hr {
+    background: #18143b;
+}
+
+#map {
+    height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+        height: 500px;
+    }
+}
