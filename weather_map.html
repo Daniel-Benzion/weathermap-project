@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to NuStart Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+
+<!--Top Navbar-->
+<div id="background">
+    <div class="navbar mb-2 p2 text-white" id="navbar"><span id="nav-title">NuStart Weather</span><span id="city"></span></div>
+
+    <!--City search form-->
+
+
+    <div id="input-form">
+        <form>
+            <div class="form-group form-inline ml-3">
+                <label for="cityName" id="search">Search Weather</label>
+                <input type="text" class="form-control ml-3" id="cityName" placeholder="Enter city">
+                <button class="btn btn-primary ml-3" type="submit" id="citySearch">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-6" id="map" style="width: 100%"></div>
+    </div>
+
+    <!--Placeholder card -->
+    <div class="d-flex flex-wrap justify-content-center" id="weatherCards">
+
+        <div class="card mx-2">
+            <div class="card-header">Date Here</div>
+            <div class="card-body text-center">
+                <div class="temp">
+                    75F
+                </div>
+                <img src="" alt="icon">
+                <hr>
+                <div class="description pb-4">
+                    Description: Loading
+                </div>
+                <div class="humidity">
+                    Humidity: Loading
+                </div>
+                <hr>
+                <div class="wind">
+                    Wind: Loading
+                </div>
+                <hr>
+                <div class="pressure">
+                    Pressure: Loading
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
+<script src="js/jquery-2.2.4.js"></script>
+
+<script src="js/weather.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
